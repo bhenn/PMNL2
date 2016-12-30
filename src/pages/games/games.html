@@ -1,0 +1,21 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Games</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="openInsert()">
+				<ion-icon name="ios-add-circle-outline"></ion-icon>
+			</button>
+		</ion-buttons>
+
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-refresher (ionRefresh)="reload($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	<ion-list>
+		<ion-item *ngFor="let item of games" (click)="openDetails(item)">
+			{{item.description}} - {{item.date | date: "dd/MM/yyyy"}} 
+		</ion-item>
+	</ion-list>
+</ion-content>
