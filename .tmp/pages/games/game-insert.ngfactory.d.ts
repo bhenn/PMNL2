@@ -1,0 +1,10 @@
+import * as import1 from '@angular/core/src/linker/view';
+import * as import2 from '@angular/core/src/linker/element';
+import * as import5 from './game-insert';
+import * as import6 from '@angular/core/src/linker/view_utils';
+import * as import7 from '@angular/core/src/di/injector';
+import * as import19 from '@angular/core/src/linker/component_factory';
+export declare const GameInsertNgFactory: import19.ComponentFactory<import5.GameInsert>;
+export declare function viewFactory_GameInsert0(viewUtils: import6.ViewUtils, parentInjector: import7.Injector, declarationEl: import2.AppElement): import1.AppView<import5.GameInsert>;
+export declare const GamePreviewNgFactory: import19.ComponentFactory<import5.GamePreview>;
+export declare function viewFactory_GamePreview0(viewUtils: import6.ViewUtils, parentInjector: import7.Injector, declarationEl: import2.AppElement): import1.AppView<import5.GamePreview>;
